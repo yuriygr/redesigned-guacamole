@@ -1,0 +1,39 @@
+[Application]
+FirstMessage = "Hello World! Let's make it!"
+Status = 'dev'
+Port = '6666'
+
+[Logger]
+File = 'main.log'
+
+[Mailer]
+Host = ''
+Login = ''
+Password = ''
+
+[Redis]
+Host = 'localhost'
+Port = '6379'
+Pass = ''
+Size = 512
+
+[Session]
+Host = 'localhost'
+Key = 'dev'
+Path = '/'
+Secure = false
+
+[Storage]
+Driver = 'mysql'
+DSN = 'osnova_the_best:no@tcp(localhost:3306)/osnova?columnsWithAlias=true'
+MaxOpenConns = 100
+
+[Cors]
+AllowedOrigins = [
+    "http://localhost:8080"
+]
+AllowedMethods = [ "GET", "POST", "PUT", "DELETE", "OPTIONS" ]
+AllowedHeaders = [ "Accept", "Authorization", "Content-Type", "X-CSRF-Token", "Set-Cookie" ]
+ExposedHeaders = [ "Link" ]
+AllowCredentials = true
+MaxAge = 400
